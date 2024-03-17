@@ -22,7 +22,7 @@ const variantClasses: Record<
 > = {
   [InputVariants.Outline]: {
     container:
-      "h-10 w-80 flex justify-between px-3 py-0 bg-gray-50 border border-gray-100 text-gray-500 text-base rounded-lg placeholder-gray-300",
+      "h-48 w-full flex justify-between px-3 py-0 bg-gray-50 border border-gray-100 text-gray-500 text-base rounded-lg placeholder-gray-300",
     input: "outline-none",
   },
 
