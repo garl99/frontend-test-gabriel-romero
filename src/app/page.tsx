@@ -1,7 +1,9 @@
-import { Text, TextVariant } from "@/components/text";
+import Header from "./sections/01-header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="p-0 md:px-16 md:py-3">
+      <Header />
+    </main>
   );
 }

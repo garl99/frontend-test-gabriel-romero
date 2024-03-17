@@ -1,8 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const customColors = {
-  primary: "#6941C6",
-  secondary: "#53389E",
+  primary: "#53389E",
+  secondary: "#6941C6",
   accent: "#E9D7FE",
   highlight: "#7F56D9",
   darkBlue: "#101828",
@@ -22,9 +22,35 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "768px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "860px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       colors: {
         ...customColors,
+      },
+      height: {
+        "44": "44px",
+        "554": "554px",
+        "674": "674px",
+      },
+      width: {
+        "95": "95px",
+        "554": "554px",
+        "674": "674px",
       },
     },
   },
