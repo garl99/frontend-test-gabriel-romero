@@ -26,9 +26,6 @@ const config: Config = {
       colors: {
         ...customColors,
       },
-      textColor: {
-        base: customColors.darkBlue,
-      },
     },
   },
   plugins: [],
