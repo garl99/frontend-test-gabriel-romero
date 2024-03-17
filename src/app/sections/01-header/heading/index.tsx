@@ -17,12 +17,12 @@ export default function Heading() {
           className="text-center"
         />
         <Text
-          variant={TextVariant.SecondaryLg}
+          variant={TextVariant.AccentLg}
           text="Smarter."
           className="text-center"
         />
         <Text
-          variant={TextVariant.SecondaryMd}
+          variant={TextVariant.AccentMd}
           className="pt-5 text-center"
           text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
         />
@@ -37,13 +37,13 @@ export default function Heading() {
 
         <div className="pt-5 flex flex-col md:flex-row md:space-x-1">
           <Text
-            variant={TextVariant.SecondarySm}
+            variant={TextVariant.AccentSm}
             text="We care about your data in our"
             className="text-center md:text-left"
           />
 
           <Text
-            variant={TextVariant.SecondarySm}
+            variant={TextVariant.AccentSm}
             className="text-center md:text-left underline"
             text="privacy policy."
             headingType="a"
