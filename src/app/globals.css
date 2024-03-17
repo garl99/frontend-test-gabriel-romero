@@ -11,3 +11,7 @@ body {
   color: rgb(var(--text-color-base));
   background: rgb(var(--background-color-base));
 }
+
+p {
+  margin-bottom: 0;
+}
