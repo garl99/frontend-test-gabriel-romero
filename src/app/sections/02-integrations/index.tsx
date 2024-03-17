@@ -5,7 +5,7 @@ import IntegrationsList from "./integrations-list";
 
 export default function Integrations() {
   return (
-    <section className="flex flex-col justify-center items-center mt-5 px-8 md:px-0">
+    <section className="flex flex-col justify-center items-center mt-24 px-8 md:px-0">
       <Chip text="Integrations" />
       <Text
         variant={TextVariant.PrimaryMd}

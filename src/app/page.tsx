@@ -1,6 +1,7 @@
 import Header from "./sections/01-header";
 import Integrations from "./sections/02-integrations";
 import CTA from "./sections/03-cta";
+import Features from "./sections/04-features";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Integrations />
       <CTA />
+      <Features />
     </main>
   );
 }
