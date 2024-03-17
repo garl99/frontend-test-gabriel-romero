@@ -19,7 +19,7 @@ export default function Navbar() {
               <Image src={Logo} alt="Logo" />
             </a>
             <div
-              className="hidden w-full md:flex md:w-auto"
+              className="hidden w-full mdlg:flex mdlg:w-auto"
               id="navbar-default"
             >
               <ul className="font-medium flex flex-col p-4 ml-8 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
@@ -67,14 +67,14 @@ export default function Navbar() {
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-darkBlue rounded-lg md:hidden"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-darkBlue rounded-lg mdlg:hidden"
               aria-controls="navbar-default"
               aria-expanded="false"
             >
               <Image src={Menu} alt="Menu" />
             </button>
 
-            <div className="hidden md:block md:space-x-5" >
+            <div className="hidden mdlg:block md:space-x-5" >
               <Text
                 variant={TextVariant.GrayMdSemiBold}
                 headingType="a"

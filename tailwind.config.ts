@@ -23,11 +23,14 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: "768px",
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      md: "860px",
+      md: "768px",
       // => @media (min-width: 768px) { ... }
+
+      mdlg: "928px",
+      // => @media (min-width: 928px) { ... }
 
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
@@ -44,13 +47,20 @@ const config: Config = {
       },
       height: {
         "44": "44px",
+        "48": "48px",
+        "272": "272px",
+        "460": "460px",
         "554": "554px",
         "674": "674px",
+        "374": "374px",
       },
       width: {
         "95": "95px",
+        "129": "129px",
+        "341": "341px",
         "554": "554px",
         "674": "674px",
+        "800": "800px",
       },
     },
   },
