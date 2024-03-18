@@ -1,7 +1,7 @@
 "use client";
 import MinusCircle from "@/assets/svg/MinusCircle.svg";
 import PlusCircle from "@/assets/svg/PlusCircle.svg";
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import Image from "next/image";
 import { useState } from "react";
 export default function QuestionsList() {
@@ -57,25 +57,25 @@ export default function QuestionsList() {
     >
       {questions.map((item, index) => (
         <div className="pb-3 md:p-5 border-b border-gray-200 mx-0 md:mx-40">
-          <h2 id="accordion-arrow-icon-heading-2">
-            <button
-              type="button"
-              className="flex items-start justify-between w-full py-5 font-medium rtl:text-right gap-3"
-              data-accordion-target="#accordion-arrow-icon-body-2"
-              aria-expanded="true"
-              aria-controls="accordion-arrow-icon-body-2"
-              onClick={() => {
-                handlerClick(index);
-              }}
-            >
-              <Text
-                variant={TextVariant.PrimarySm}
-                text={item.question}
-                className="text-lg text-left"
-              />
-              <Image src={item.open ? MinusCircle : PlusCircle} alt="Minus" />
-            </button>
-          </h2>
+          <button
+            type="button"
+            className="flex items-start justify-between w-full py-5 font-medium rtl:text-right gap-3"
+            data-accordion-target="#accordion-arrow-icon-body-2"
+            aria-expanded="true"
+            aria-controls="accordion-arrow-icon-body-2"
+            onClick={() => {
+              handlerClick(index);
+            }}
+          >
+            <Text
+              variant={TextVariant.PrimarySm}
+              text={item.question}
+              className="text-lg text-left"
+  
+              headingType={HeadingType.h3}
+            />
+            <Image src={item.open ? MinusCircle : PlusCircle} alt="Minus" />
+          </button>
           <div
             id="accordion-arrow-icon-body-2"
             className={item.open ? "flex" : "hidden"}

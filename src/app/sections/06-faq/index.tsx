@@ -1,4 +1,4 @@
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import QuestionsList from "./questions-list";
 
 export default function FAQ() {
@@ -8,6 +8,7 @@ export default function FAQ() {
         variant={TextVariant.PrimaryMd}
         text="Frequently asked questions"
         className="mt-4 text-center"
+        headingType={HeadingType.h2}
       />
       <Text
         variant={TextVariant.GrayLg}

@@ -1,5 +1,5 @@
 import { Chip } from "@/components/chip";
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import React from "react";
 import IntegrationsList from "./integrations-list";
 
@@ -11,6 +11,7 @@ export default function Integrations() {
         variant={TextVariant.PrimaryMd}
         text="Get more value from your tools"
         className="mt-4 text-center"
+        headingType={HeadingType.h2}
       />
       <Text
         variant={TextVariant.GrayLg}

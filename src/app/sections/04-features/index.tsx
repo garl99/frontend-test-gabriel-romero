@@ -1,5 +1,5 @@
 import { Chip } from "@/components/chip";
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import FeaturesList from "./features-list";
 
 export default function Features() {
@@ -10,6 +10,7 @@ export default function Features() {
         variant={TextVariant.PrimaryMd}
         text="Cutting-edge features for advanced analytics"
         className="mt-4 text-center"
+        headingType={HeadingType.h2}
       />
       <Text
         variant={TextVariant.GrayLg}
