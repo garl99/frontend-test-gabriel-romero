@@ -42,7 +42,7 @@ const variantClasses: Record<TextVariant, string> = {
   [TextVariant.PrimaryXs]: "text-sm md:text-lg text-darkBlue font-semibold",
   [TextVariant.PrimarySm]: "text-lg md:text-xl text-darkBlue font-semibold",
   [TextVariant.PrimaryMd]: "text-3xl md:text-4xl text-darkBlue font-semibold",
-  [TextVariant.PrimaryLg]: "text-sm md:text-5xl text-darkBlue font-semibold",
+  [TextVariant.PrimaryLg]: "text-3xl md:text-5xl text-darkBlue font-semibold",
   [TextVariant.AccentSm]: "text-sm md:text-sm text-accent font-normal",
   [TextVariant.AccentMd]: "text-lg md:text-xl text-accent font-normal",
   [TextVariant.AccentLg]: "text-4xl md:text-7xl text-accent font-semibold",
