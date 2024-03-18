@@ -1,5 +1,20 @@
 import type { Config } from "tailwindcss";
 
+const customColors = {
+  primary: "#53389E",
+  secondary: "#6941C6",
+  accent: "#E9D7FE",
+  highlight: "#7F56D9",
+  darkBlue: "#101828",
+  gray: {
+    100: "#D0D5DD",
+    200: "#EAECF0",
+    300: "#667085",
+    400: "#475467",
+    500: "#344054",
+  },
+};
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,11 +22,51 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      mdlg: "928px",
+      // => @media (min-width: 928px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        ...customColors,
+      },
+      height: {
+        "28": "28px",
+        "44": "44px",
+        "48": "48px",
+        "272": "272px",
+        "400": "400px",
+        "448": "448px",
+        "460": "460px",
+        "554": "554px",
+        "674": "674px",
+        "374": "374px",
+        "338": "338px",
+        "364": "364px",
+      },
+      width: {
+        "95": "95px",
+        "129": "129px",
+        "341": "341px",
+        "554": "554px",
+        "674": "674px",
+        "800": "800px",
+        "105": "105px",
       },
     },
   },
