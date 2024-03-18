@@ -29,7 +29,7 @@ export default function FeaturesList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
       {features.map((item) => (
-        <Item item={item} cta="Learn more"/>
+        <Item item={item} cta="Learn more" iconClassName="p-2.5" />
       ))}
     </div>
   );

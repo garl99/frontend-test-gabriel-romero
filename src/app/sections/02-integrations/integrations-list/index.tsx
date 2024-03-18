@@ -1,13 +1,9 @@
-import React from "react";
-import Notion from "@/assets/svg/Notion.svg";
-import Slack from "@/assets/svg/Slack.svg";
-import Drive from "@/assets/svg/GoogleDrive.svg";
-import Itercom from "@/assets/svg/Intercom.svg";
 import Jira from "@/assets/svg//Jira.svg";
 import Dropbox from "@/assets/svg/Dropbox.svg";
-import Image from "next/image";
-import IconArrow from "@/assets/svg/IconArrow.svg";
-import { Text, TextVariant } from "@/components/text";
+import Drive from "@/assets/svg/GoogleDrive.svg";
+import Itercom from "@/assets/svg/Intercom.svg";
+import Notion from "@/assets/svg/Notion.svg";
+import Slack from "@/assets/svg/Slack.svg";
 import { Item } from "@/components/item";
 export default function IntegrationsList() {
   const integrations = [
@@ -51,7 +47,7 @@ export default function IntegrationsList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
       {integrations.map((item) => (
-        <Item item={item} cta="View integration" />
+        <Item item={item} cta="View integration" iconClassName="p-0.5" />
       ))}
     </div>
   );

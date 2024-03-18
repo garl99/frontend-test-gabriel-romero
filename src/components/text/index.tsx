@@ -56,7 +56,7 @@ const variantClasses: Record<TextVariant, string> = {
   [TextVariant.GrayMdSemiBold]: "text-sm md:text-base text-gray-400 font-semibold",
   [TextVariant.GrayLg]: "text-lg md:text-xl text-gray-400 font-normal",
   [TextVariant.GrayDarkMd]: "text-sm md:text-base text-gray-500 font-semibold",
-  [TextVariant.SecondarySm]: "text-base md:text-sm text-secondary font-normal ",
+  [TextVariant.SecondarySm]: "text-base md:text-sm text-secondary font-semibold ",
   [TextVariant.SecondaryMd]: "text-base md:text-base text-secondary font-semibold",
   [TextVariant.Custom]: "",
 };
