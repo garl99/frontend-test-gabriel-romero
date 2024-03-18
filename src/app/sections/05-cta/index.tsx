@@ -20,7 +20,7 @@ import { BtnVariants, Button } from "@/components/button";
 export default function CTA() {
   return (
     <section className="mt-24 px-4 md:px-0">
-      <div className="rounded-3xl flex flex-col md:flex-row overflow-hidden">
+      <div className="flex flex-col md:flex-row overflow-hidden">
         <div className="w-full h-338 md:h-400 md:w-4/6 flex flex-col items-center justify-center p-0 md:p-8">
           <Text
             variant={TextVariant.PrimaryLg}
