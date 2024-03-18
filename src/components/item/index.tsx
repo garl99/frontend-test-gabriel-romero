@@ -12,7 +12,7 @@ interface Props {
 export const Item: FC<Props> = ({ item, cta, iconClassName }) => {
   const { img, name, description } = item;
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center" key={item.name}>
       <div
         className={`border border-gray-100 border-opacity-50 rounded-xl ${iconClassName}`}
       >

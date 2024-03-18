@@ -30,8 +30,8 @@ export default function Footer() {
         <div className="flex mt-12 gap-10">
           <div className="flex flex-col gap-3">
             <Text variant={TextVariant.PrimaryXXs} text="Product" />
-            {product.map((item) => (
-              <div className="flex gap-2">
+            {product.map((item, index) => (
+              <div className="flex gap-2" key={index}>
                 <Text
                   variant={TextVariant.SecondaryMd}
                   headingType="a"
@@ -50,12 +50,13 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <Text variant={TextVariant.PrimaryXXs} text="Company" />
-            {company.map((item) => (
+            {company.map((item, index) => (
               <Text
                 variant={TextVariant.SecondaryMd}
                 headingType="a"
                 text={item.name}
                 className="cursor-pointer hover:underline"
+                key={index}
               />
             ))}
           </div>

@@ -47,7 +47,7 @@ export default function IntegrationsList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
       {integrations.map((item) => (
-        <Item item={item} cta="View integration" iconClassName="p-0.5" />
+        <Item item={item} cta="View integration" iconClassName="p-0.5" key={item.name}/>
       ))}
     </div>
   );

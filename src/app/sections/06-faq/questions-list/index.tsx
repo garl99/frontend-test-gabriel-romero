@@ -56,7 +56,7 @@ export default function QuestionsList() {
       className="mt-12 md:mt-16 w-full"
     >
       {questions.map((item, index) => (
-        <div className="pb-3 md:p-5 border-b border-gray-200 mx-0 md:mx-40">
+        <div className="pb-3 md:p-5 border-b border-gray-200 mx-0 md:mx-40" key={index}>
           <button
             type="button"
             className="flex items-start justify-between w-full py-5 font-medium rtl:text-right gap-3"
