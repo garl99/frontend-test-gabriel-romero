@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import TestimonialImage from "@/assets/svg/Testimonials.svg";
 import Stars from "@/assets/svg/Stars.svg";
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import { BtnVariants, Button } from "@/components/button";
 
 export default function Testimonials() {
@@ -23,6 +23,7 @@ export default function Testimonials() {
             variant={TextVariant.LightMd}
             text="Love the simplicity of the service and the prompt customer support. We can’t imagine working without it."
             className="w-full mt-6 text-2xl"
+            headingType={HeadingType.h2}
           />
 
           <div className="w-full flex flex-col mt-8 md:space-x-3">

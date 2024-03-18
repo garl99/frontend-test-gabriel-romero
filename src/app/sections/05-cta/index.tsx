@@ -14,7 +14,7 @@ import ImageCTA3Res from "@/assets/svg/ImageCTA3Res.svg";
 import ImageCTA4Res from "@/assets/svg/ImageCTA4Res.svg";
 import ImageCTA5Res from "@/assets/svg/ImageCTA5Res.svg";
 
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import { BtnVariants, Button } from "@/components/button";
 
 export default function CTA() {
@@ -26,6 +26,7 @@ export default function CTA() {
             variant={TextVariant.PrimaryLg}
             text="No long-term contracts. No catches."
             className="w-full"
+            headingType={HeadingType.h2}
           />
           <Text
             variant={TextVariant.GrayLg}

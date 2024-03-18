@@ -5,6 +5,7 @@ import SecondCTA from "./sections/05-cta";
 import Features from "./sections/04-features";
 import Testimonials from "./sections/07-testimonial";
 import FAQ from "./sections/06-faq";
+import Footer from "./sections/08-footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SecondCTA />
       <FAQ />
       <Testimonials />
+      <Footer />
     </main>
   );
 }

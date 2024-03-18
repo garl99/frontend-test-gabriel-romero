@@ -17,16 +17,19 @@ export default function Heading() {
           variant={TextVariant.LightLg}
           text="Grow your users."
           className="text-center"
+          headingType={HeadingType.h1}
         />
         <Text
           variant={TextVariant.AccentLg}
           text="Smarter."
           className="text-center"
+          headingType={HeadingType.h2}
         />
         <Text
           variant={TextVariant.AccentMd}
           className="pt-5 text-center"
           text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+          headingType={HeadingType.h2}
         />
         <div className="w-full flex flex-col md:flex-row justify-center mt-5 md:space-x-3">
           <div>

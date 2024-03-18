@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import ImageCTA from "@/assets/svg/ImageCTA.svg";
-import { Text, TextVariant } from "@/components/text";
+import { HeadingType, Text, TextVariant } from "@/components/text";
 import { BtnVariants, Button } from "@/components/button";
 
 export default function CTA() {
@@ -15,6 +15,7 @@ export default function CTA() {
             variant={TextVariant.LightMd}
             text="Give us a shot"
             className="w-full"
+            headingType={HeadingType.h2}
           />
           <Text
             variant={TextVariant.AccentMd}
