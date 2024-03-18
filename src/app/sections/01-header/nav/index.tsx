@@ -83,7 +83,7 @@ export default function Navbar() {
           openMenu ? "flex md:hidden" : "hidden"
         }`}
       >
-        <ul className="w-full font-medium flex flex-col p-4 ml-8 md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white space-y-4">
+        <ul className="w-full font-medium flex flex-col p-4 ml-8 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white space-y-4">
           <NavLink href="#" text="Home" className="justify-end" />
           <NavLink href="#" text="Products" className="justify-end" />
           <NavLink href="#" text="Resources" className="justify-end" />
